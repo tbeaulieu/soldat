@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/4d4a3d59-8d09-4e80-8092-86f95602b40c)
 # Soldat Raggio
-Another Ridge Racer 6 based dashboard for the GAWR dash, this one based upon the Soldat Raggio. Like the Kamata dash, there is a gauge peak functionality that will engage once you start driving, and will display when you are completely stopped (0 MPH/KMH), and your seatbelt is disconnected. You'll see the speed start scrolling when the peak is shown.
+Another Ridge Racer 6 based dashboard for the GAWR dash, this one based upon the Soldat Raggio. Like the Kamata dash, there is a gauge peak functionality that will engage once you start driving, and will display when you are completely stopped (0 MPH/KMH), and your seatbelt is disconnected. You'll see the speed start scrolling when the peak is shown. I have some MAP sensor/Wideband items on the left to be fully implemented.
 
 This repo contains a modified font (I redesigned it to be monospace) as downloaded from here: https://www.keshikan.net/fonts-e.html, here's the license for it: https://github.com/keshikan/DSEG/blob/master/DSEG-LICENSE.txt
 
