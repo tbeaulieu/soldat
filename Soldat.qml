@@ -624,16 +624,6 @@ Item {
                     angle:Math.min(Math.max(0, ((root.watertemp - 50) * 1.5)), 90)
                     }
             ]
-            DropShadow{
-                anchors.fill: coolant_needle
-                horizontalOffset: 1
-                verticalOffset: 1
-                radius: 8.0
-                samples: 17
-                color: "#80000000"
-                source: coolant_needle
-                z:3
-            }
         }
     }
     Item{
@@ -658,25 +648,22 @@ Item {
             id: fuel_needle
             x: 600; y: 427; z: 3
             opacity: 0;
-            source: if(!root.sidelight) './soldat/orange_fuel_needle'; else './soldat/fuel_needle.png'
+            source: if(!root.sidelight) './soldat/orange_fuel_needle.png'; else './soldat/fuel_needle.png'
             transform:[
                 Rotation {
                     id: fuel_rotate
                     origin.y: 7
                     origin.x: 20
                     angle:-Math.min(Math.max(0, ((root.fuel) * .9)), 90)
-                    }
+                        Behavior on angle{
+                            SpringAnimation {
+                                spring: .2
+                                damping:.8
+                            }
+                        }
+                    } 
             ]
-            DropShadow{
-                anchors.fill: fuel_needle
-                horizontalOffset: 1
-                verticalOffset: 1
-                radius: 8.0
-                samples: 17
-                color: "#80000000"
-                source: fuel_needle
-                z:2
-            }
+            
         }
     }
 
